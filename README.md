@@ -5,7 +5,17 @@ I have configured a cloud-based machine learning production model, deployed it, 
 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+screenshots\Architectural Diagram.png
+
+The operational flow is depicted in the architectural diagram above. Let's clarify each action:
+
+- Register The Dataset: Uploading the dataset into Azure Machine Learning Studio is required to register the dataset. Either the URL or an upload directly from a local folder can be used for this.
+- AutoML Run: At this step, we configure the compute cluster, the type of machine learning task (in this case, classification), the exit criteria, etc. On our uploaded dataset, many models are trained using this.
+- Deploy the best model: Here, using Azure Container Instance (ACI) or Azure Kubernetes Service (AKS), we choose the top-performing model from our AutoML run and deploy it into production.
+- Enable logging and Application Insights: This can be carried out either during the model's deployment from the studio into production or thereafter using a Python script. This aids in monitoring the effectiveness of deployed models and the quantity of successful/failed requests.
+- Consume Model Endpoints: After the model is deployed, a REST endpoint is created, allowing other services to communicate with the model. We are able to communicate with the deployed model and receive responses (predictions).
+- Create and Publish a Pipeline: We can build and deploy a pipeline using a Jupyter Notebook and the Azure Python SDK. The working directory must contain a config.json file for this to work. We can completely automate the process of training and delivering our model using pipelines.
+
 
 ## Future Work
 
