@@ -48,7 +48,7 @@ We are able to enable Application Insights and obtain logs after installing our 
 **Logging is enabled by running the provided logs.py script**
 ![deployment-logs](https://user-images.githubusercontent.com/116864320/221396134-f363d841-adbb-47ca-9855-d885b4403178.png)
 
-**Swagger Documentation:**A tool for creating and documenting REST APIs is called Swagger. It can be utilised by different technologies to automate API-related operations as well as to exchange documentation among product managers, testers, and developers.
+**Swagger Documentation:** A tool for creating and documenting REST APIs is called Swagger. It can be utilised by different technologies to automate API-related operations as well as to exchange documentation among product managers, testers, and developers.
 
 To establish a website that details the HTTP endpoint for a deployed model, Azure provides a swagger.json URL. Here, we used Swagger to consume our deployed model and display the contents of the model's API.
 
@@ -89,6 +89,6 @@ Original endpoint.py code from github was missing the "Input" wrapper and had to
 
 ## Screen Recording
 Here a link to a screen recording of the project in action is provided. 
-![screencast-video](https://youtu.be/DRH5pTzNou4)
+https://youtu.be/DRH5pTzNou4
 
 I realised the recording was on recording my chrome window after the project timed out, what is missing is the API call to swagger which was made through command prompt available as proof in the screenshots above.
