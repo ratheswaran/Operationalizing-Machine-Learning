@@ -5,7 +5,7 @@ I have configured a cloud-based machine learning production model, deployed it, 
 
 
 ## Architectural Diagram
-screenshots\Architectural Diagram.png
+![Architectural Diagram](screenshots\Architectural Diagram.png)
 
 The operational flow is depicted in the architectural diagram above. Let's clarify each action:
 
